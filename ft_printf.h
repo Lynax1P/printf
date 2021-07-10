@@ -4,11 +4,14 @@
 # include <stdarg.h>
 # include <unistd.h>
 
+# define START {
+# define END }
 typedef struct s_type_flags
 {
         int     minus;
-        int     sero;
+        int     zero;
         char    type;
+        int     wight;
 }               t_format;
 
 int     ft_printf(const char *format, ...);
