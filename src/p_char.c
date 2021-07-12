@@ -16,7 +16,7 @@ START
         while(i)
         {
             write(1, " ", 1);
-            if (i - 1 == 0);
+            if (i - 1 == 0)
                 write(1, &c, 1);
             i--;
         }

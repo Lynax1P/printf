@@ -52,7 +52,7 @@ START
 		if (flag == 2)
 		{
 			write(1, "%", 1);
-			*count++;
+			*count += 1;
 			return (1) ;
 		}
 		if (flag == 1)
@@ -74,18 +74,17 @@ START
 	START
 		if (*str + i == '%')
 		{
-			chk_exc = count;
-			i = i + check_wight(str[i], count, type);
-			if (chk_exc != count)
+			chk_exc = *count;
+			i += check_wight(str[i], count, type);
+			if (chk_exc != *count)
 				continue ;
 			if (!check_flag(str[i], count, type))
 				return ;
-			
+			find_function(arg, type, *count);
 		}
-		i = i + write(1, str + i, 1);
+		i += write(1, str + i, 1);
 		(*count)++;
 	END
-	*count = i;
 END
 
 int ft_printf(const char *format, ...)

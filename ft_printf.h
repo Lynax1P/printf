@@ -15,5 +15,6 @@ typedef struct s_type_flags
 }               t_format;
 
 int     ft_printf(const char *format, ...);
+void    p_char(va_list arg, t_format *type, int *count);
 
 #endif
