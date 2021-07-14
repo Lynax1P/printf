@@ -13,12 +13,18 @@ CMakeFiles/ft_printf.dir/src/p_hex.c.o
 CMakeFiles/ft_printf.dir/src/p_int.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
  /Users/csherill/Documents/clone/printf/src/p_int.c
+CMakeFiles/ft_printf.dir/src/p_pointer.c.o
+ /Users/csherill/Documents/clone/printf/ft_printf.h
+ /Users/csherill/Documents/clone/printf/src/p_pointer.c
 CMakeFiles/ft_printf.dir/src/p_str.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
  /Users/csherill/Documents/clone/printf/src/p_str.c
 CMakeFiles/ft_printf.dir/src/p_unsigned.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
  /Users/csherill/Documents/clone/printf/src/p_unsigned.c
+CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o
+ /Users/csherill/Documents/clone/printf/ft_printf.h
+ /Users/csherill/Documents/clone/printf/src/p_upper_hex.c
 CMakeFiles/ft_printf.dir/utils/parsutils.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
  /Users/csherill/Documents/clone/printf/utils/parsutils.c
