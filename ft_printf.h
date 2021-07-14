@@ -26,6 +26,7 @@ int			p_str(va_list arg, t_format *type, int *count);
 int			p_int(va_list arg, t_format *type, int *count);
 int			p_unsigned(va_list arg, t_format *type, int *count);
 size_t		ft_strlen(char *str1);
-char		*ft_int_wight(int integer, size_t *wight);
+int fill_str_hex(size_t hex, int *len, char *hex_str, char *hex_buf);
+int			p_pointer(va_list arg, t_format *type, int *count);
 
 #endif

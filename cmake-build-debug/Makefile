@@ -250,6 +250,33 @@ src/p_int.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_int.c.s
 .PHONY : src/p_int.c.s
 
+src/p_pointer.o: src/p_pointer.c.o
+
+.PHONY : src/p_pointer.o
+
+# target to build an object file
+src/p_pointer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_pointer.c.o
+.PHONY : src/p_pointer.c.o
+
+src/p_pointer.i: src/p_pointer.c.i
+
+.PHONY : src/p_pointer.i
+
+# target to preprocess a source file
+src/p_pointer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_pointer.c.i
+.PHONY : src/p_pointer.c.i
+
+src/p_pointer.s: src/p_pointer.c.s
+
+.PHONY : src/p_pointer.s
+
+# target to generate assembly for a file
+src/p_pointer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_pointer.c.s
+.PHONY : src/p_pointer.c.s
+
 src/p_str.o: src/p_str.c.o
 
 .PHONY : src/p_str.o
@@ -304,6 +331,33 @@ src/p_unsigned.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_unsigned.c.s
 .PHONY : src/p_unsigned.c.s
 
+src/p_upper_hex.o: src/p_upper_hex.c.o
+
+.PHONY : src/p_upper_hex.o
+
+# target to build an object file
+src/p_upper_hex.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o
+.PHONY : src/p_upper_hex.c.o
+
+src/p_upper_hex.i: src/p_upper_hex.c.i
+
+.PHONY : src/p_upper_hex.i
+
+# target to preprocess a source file
+src/p_upper_hex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_upper_hex.c.i
+.PHONY : src/p_upper_hex.c.i
+
+src/p_upper_hex.s: src/p_upper_hex.c.s
+
+.PHONY : src/p_upper_hex.s
+
+# target to generate assembly for a file
+src/p_upper_hex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_upper_hex.c.s
+.PHONY : src/p_upper_hex.c.s
+
 utils/parsutils.o: utils/parsutils.c.o
 
 .PHONY : utils/parsutils.o
@@ -352,12 +406,18 @@ help:
 	@echo "... src/p_int.o"
 	@echo "... src/p_int.i"
 	@echo "... src/p_int.s"
+	@echo "... src/p_pointer.o"
+	@echo "... src/p_pointer.i"
+	@echo "... src/p_pointer.s"
 	@echo "... src/p_str.o"
 	@echo "... src/p_str.i"
 	@echo "... src/p_str.s"
 	@echo "... src/p_unsigned.o"
 	@echo "... src/p_unsigned.i"
 	@echo "... src/p_unsigned.s"
+	@echo "... src/p_upper_hex.o"
+	@echo "... src/p_upper_hex.i"
+	@echo "... src/p_upper_hex.s"
 	@echo "... utils/parsutils.o"
 	@echo "... utils/parsutils.i"
 	@echo "... utils/parsutils.s"

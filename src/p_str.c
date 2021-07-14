@@ -1,6 +1,6 @@
 #include "../ft_printf.h"
 
-void	put_str(char *str, int *count, int mod)
+static void	put_str(char *str, int *count, int mod)
 {
 	int	i;
 

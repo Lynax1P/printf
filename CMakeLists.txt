@@ -13,4 +13,6 @@ add_executable(ft_printf
         src/p_int.c
         src/p_unsigned.c
         src/p_hex.c
+        src/p_upper_hex.c
+        src/p_pointer.c
         utils/parsutils.c)

@@ -14,14 +14,11 @@ static void	put_str(char *str, int *count, int mod, size_t len)
 
 }
 
-char  *ft_unint_wight(size_t integer, size_t *wight)
+static void *ft_unint_wight(unsigned int integer, size_t *wight, char *buf)
 {
 	size_t i;
-	char	buf[30];
-	char	*point;
 	
 	i = 0;
-	point = &(*buf);
 	while (1)
 	{
 		buf[i] = integer % 10 + 48;
@@ -32,26 +29,23 @@ char  *ft_unint_wight(size_t integer, size_t *wight)
 	}
 	buf[i] = 0;
 	*wight = i;
-	return (point);
 }
 
 int	p_unsigned(va_list arg, t_format *type, int *count)
-START
-	char			*buf;
-	size_t			wht;
-	size_t			len;
-	unsigned int	unint;
+{
+	char buf[30];
+	size_t wht;
+	size_t len;
+	unsigned int unint;
 
-    len = 0;
+	len = 0;
 	wht = type->wight;
-	unint = va_arg(arg, int);
-	buf = ft_unint_wight(unint, &len);
-	if (len)
-	{
+	unint = va_arg(arg, unsigned int);
+	ft_unint_wight(unint, &len, &*buf);
+	if (len) {
 		if (wht < len)
 			put_str(buf, count, 0, len);
-		else
-		{
+		else {
 			wht = wht - len;
 			put_str(NULL, count, wht, 0);
 			put_str(buf, count, 0, len);
@@ -59,5 +53,5 @@ START
 		return (0);
 	}
 	return (1);
-END
+}
 

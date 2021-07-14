@@ -154,9 +154,35 @@ CMakeFiles/ft_printf.dir/src/p_hex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/src/p_hex.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/csherill/Documents/clone/printf/src/p_hex.c -o CMakeFiles/ft_printf.dir/src/p_hex.c.s
 
+CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o: CMakeFiles/ft_printf.dir/flags.make
+CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o: ../src/p_upper_hex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o -c /Users/csherill/Documents/clone/printf/src/p_upper_hex.c
+
+CMakeFiles/ft_printf.dir/src/p_upper_hex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.dir/src/p_upper_hex.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/csherill/Documents/clone/printf/src/p_upper_hex.c > CMakeFiles/ft_printf.dir/src/p_upper_hex.c.i
+
+CMakeFiles/ft_printf.dir/src/p_upper_hex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/src/p_upper_hex.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/csherill/Documents/clone/printf/src/p_upper_hex.c -o CMakeFiles/ft_printf.dir/src/p_upper_hex.c.s
+
+CMakeFiles/ft_printf.dir/src/p_pointer.c.o: CMakeFiles/ft_printf.dir/flags.make
+CMakeFiles/ft_printf.dir/src/p_pointer.c.o: ../src/p_pointer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ft_printf.dir/src/p_pointer.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/src/p_pointer.c.o -c /Users/csherill/Documents/clone/printf/src/p_pointer.c
+
+CMakeFiles/ft_printf.dir/src/p_pointer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.dir/src/p_pointer.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/csherill/Documents/clone/printf/src/p_pointer.c > CMakeFiles/ft_printf.dir/src/p_pointer.c.i
+
+CMakeFiles/ft_printf.dir/src/p_pointer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/src/p_pointer.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/csherill/Documents/clone/printf/src/p_pointer.c -o CMakeFiles/ft_printf.dir/src/p_pointer.c.s
+
 CMakeFiles/ft_printf.dir/utils/parsutils.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/utils/parsutils.c.o: ../utils/parsutils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ft_printf.dir/utils/parsutils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ft_printf.dir/utils/parsutils.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/utils/parsutils.c.o -c /Users/csherill/Documents/clone/printf/utils/parsutils.c
 
 CMakeFiles/ft_printf.dir/utils/parsutils.c.i: cmake_force
@@ -175,6 +201,8 @@ ft_printf_OBJECTS = \
 "CMakeFiles/ft_printf.dir/src/p_int.c.o" \
 "CMakeFiles/ft_printf.dir/src/p_unsigned.c.o" \
 "CMakeFiles/ft_printf.dir/src/p_hex.c.o" \
+"CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o" \
+"CMakeFiles/ft_printf.dir/src/p_pointer.c.o" \
 "CMakeFiles/ft_printf.dir/utils/parsutils.c.o"
 
 # External object files for target ft_printf
@@ -186,10 +214,12 @@ ft_printf: CMakeFiles/ft_printf.dir/src/p_str.c.o
 ft_printf: CMakeFiles/ft_printf.dir/src/p_int.c.o
 ft_printf: CMakeFiles/ft_printf.dir/src/p_unsigned.c.o
 ft_printf: CMakeFiles/ft_printf.dir/src/p_hex.c.o
+ft_printf: CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o
+ft_printf: CMakeFiles/ft_printf.dir/src/p_pointer.c.o
 ft_printf: CMakeFiles/ft_printf.dir/utils/parsutils.c.o
 ft_printf: CMakeFiles/ft_printf.dir/build.make
 ft_printf: CMakeFiles/ft_printf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable ft_printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable ft_printf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_printf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

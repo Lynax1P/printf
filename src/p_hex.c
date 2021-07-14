@@ -1,6 +1,6 @@
 #include "../ft_printf.h"
 
-static void	put_str(char *str, int *count, int mod, size_t len)
+static int	put_str(char *str, int *count, int mod, size_t len)
 {
 	int i;
 
@@ -11,52 +11,46 @@ static void	put_str(char *str, int *count, int mod, size_t len)
 	else 
 		while(mod--)
 			*count += write(1, " ", 1);
-
+	return (1);
 }
 
-void	find_hex(size_t hex, int *len, char *hex_str)
+static void hex_point_ft(unsigned int hex, size_t *len, char *hex_str)
 {
-	char	buf[16] = "0123456789abcdef";
-	int		digit;
-	int		i;
+	char	hex_buf[16] = "0123456789abcdef";
 
-	digit = 0;
-	i = 0;
-	while (hex > 16 * i)
-		i += 1;
-	digit = hex - 16 * --i;
-	hex_str[*len] = buf[digit];
-	*len += 1;
-	if (i > 16)
-		find_hex(i, len, hex_str);
-	else
-		hex_str[(*len)++] = buf[i];
-	return ;
+	while (1)
+	{
+		if (hex < 16)
+		{
+			hex_str[(*len)++] = hex_buf[hex];
+			return ;
+		}
+		else
+			hex_str[(*len)++] = hex_buf[hex % 16];
+		hex /= 16;
+	}
 }
 
 int	p_hex(va_list arg, t_format *type, int *count)
-START
-	size_t			wht;
-	size_t			len;
-	unsigned int	unint;
-	char			hex_str[30];
+{
+	size_t wht;
+	size_t len;
+	unsigned int unint;
+	char hex_str[30];
 
-    len = 0;
+	len = 0;
 	wht = type->wight;
-	unint = va_arg(arg, int);
-	find_hex(unint, &len, &hex_str);
-	if (len)
-	{
+	unint = va_arg(arg, unsigned int);
+	hex_point_ft(unint, &len, &*hex_str);
+	if (len) {
 		if (wht < len)
 			put_str(hex_str, count, 0, len);
-		else
-		{
+		else {
 			wht = wht - len;
-			put_str(NULL, count, wht, 0);
-			put_str(hex_str, count, 0, len);
+			return (!(put_str(NULL, count, wht, 0) == \
+             put_str(hex_str, count, 0, len)));
 		}
-		return (0);
 	}
 	return (1);
-END
+}
 

@@ -95,10 +95,16 @@
 		<Unit filename="/Users/csherill/Documents/clone/printf/src/p_int.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/csherill/Documents/clone/printf/src/p_pointer.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/csherill/Documents/clone/printf/src/p_str.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/csherill/Documents/clone/printf/src/p_unsigned.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/csherill/Documents/clone/printf/src/p_upper_hex.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/csherill/Documents/clone/printf/utils/parsutils.c">

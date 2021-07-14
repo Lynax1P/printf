@@ -1,6 +1,6 @@
 #include "../ft_printf.h"
 
-static void	put_str(char *str, int *count, int mod, size_t len)
+static int	put_str(char *str, int *count, int mod, size_t len)
 {
 	int i;
 
@@ -11,9 +11,10 @@ static void	put_str(char *str, int *count, int mod, size_t len)
 	else 
 		while(mod--)
 			*count += write(1, " ", 1);
+	return (1);
 }
 
-char	*ft_int_wight(int integer, size_t *wight)
+static char	*ft_int_wight(int integer, size_t *wight)
 {
 	size_t i;
 	char	buf[30];
@@ -40,6 +41,23 @@ char	*ft_int_wight(int integer, size_t *wight)
 	return (point);
 }
 
+static int min_int(int integer, size_t wht, int *count)
+{
+	int len;
+
+	len = 11;
+	if (wht < len)
+		write(1, "-2147483648", 11);
+	else
+	{
+		wht = wht - len;
+		put_str(NULL, count, wht, len);
+		write(1, "-2147483648", 11);
+		*count += 11;
+	}
+	return (0);
+}
+
 int	p_int(va_list arg, t_format *type, int *count)
 {
 	char	*buf;
@@ -50,6 +68,8 @@ int	p_int(va_list arg, t_format *type, int *count)
     len = 0;
 	wht = type->wight;
 	integer = va_arg(arg, int);
+	if (integer == -2147483648)
+		return (min_int(integer, wht, count));
 	buf = ft_int_wight(integer, &len);
 	if (len)
 	{
@@ -58,10 +78,8 @@ int	p_int(va_list arg, t_format *type, int *count)
 		else
 		{
 			wht = wht - len;
-			put_str(NULL, count, wht, 0);
-			put_str(buf, count, 0, len);
+			return (!(put_str(NULL, count, wht, 0) == put_str(buf, count, 0, len)));
 		}
-		return (0);
 	}
 	return (1);
 }

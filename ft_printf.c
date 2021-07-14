@@ -9,7 +9,7 @@ void	null_struct(t_format *type)
 }
 
 int		find_function(va_list arg, t_format *type,  int *count)
-START
+{
 	char	flag;
 
 	flag = type->type;
@@ -19,15 +19,16 @@ START
 		return(!(p_str(arg, type, count)));
 	else if (flag == 'd' || flag == 'i')
 		return (!(p_int(arg, type, count)));
-//	else if (flag == 'p')
-//		p_pointer(arg, type, count);
+	else if (flag == 'p')
+		return (!(p_pointer(arg, type, count)));
 	else if (flag == 'u')
-		p_unsigned(arg, type, count);
+		return (!(p_unsigned(arg, type, count)));
 	else if (flag == 'x')
-		p_hex(arg, type, count);
-//	else if (flag == 'X')
-//		p_upper_hex(arg, type, count);
-END
+		return (!(p_hex(arg, type, count)));
+	else if (flag == 'X')
+		return (!(p_upper_hex(arg, type, count)));
+	return 0;
+}
 
 int check_flag(char *str, int *count, t_format *type)
 {
@@ -41,7 +42,7 @@ int check_flag(char *str, int *count, t_format *type)
 }
 
 int	check_wight(char *str, int *count, t_format *type)
-START
+{
 	int 	i;
 	int		flag;
 
@@ -61,10 +62,10 @@ START
 			type->wight = type->wight * 10 + str[i++] - 48;
 	END
 	return (i);
-END
+}
 
 void    check_string(va_list arg, int *count, char *str) 
-START
+{
 	int			i;
 	int			chk_exc;
 	t_format	type;
@@ -89,10 +90,10 @@ START
 			*count += 1;
 		}
 	END
-END
+}
 
 int ft_printf(const char *format, ...)
-START
+{
     va_list arg;
     int     count;
 
@@ -103,10 +104,13 @@ START
 	check_string(arg, &count, (char *)format);
     va_end(arg);
     return (count);
-END
+}
 
 int main()
 {
-	unsigned int i = 111111111;
-	printf("%d", ft_printf("|%1x|\n", i));
+	int i = 1000032413331189511;
+
+
+	printf("%d\n", ft_printf("u -> |%20u|\nd -> |%20d|\ni -> |%20i|\np -> |%20p|\nx -> |%20x|\nX -> |%20X|\n", i, i , i , i , i));
+	printf("%d\n", printf("u -> |%20u|\nd -> |%20d|\ni -> |%20i|\np -> |%20p|\nx -> |%20x|\nX -> |%20X|\n", i, i , i , i , i));
 }
