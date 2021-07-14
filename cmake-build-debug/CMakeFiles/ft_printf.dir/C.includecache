@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/csherill/Documents/clone/printf/ft_printf.h
+stdarg.h
+-
+unistd.h
+-
+stdio.h
+-
+
+/Users/csherill/Documents/clone/printf/src/p_hex.c
+../ft_printf.h
+/Users/csherill/Documents/clone/printf/ft_printf.h
+

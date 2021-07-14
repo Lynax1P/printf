@@ -3,18 +3,29 @@
 
 # include <stdarg.h>
 # include <unistd.h>
+# include <stdio.h>
 
 # define START {
 # define END }
+# define pl +=
+# define AND &&
+
 typedef struct s_type_flags
 {
-        int     minus;
-        int     zero;
-        char    type;
-        int     wight;
+		int     minus;
+		int     zero;
+		char    type;
+		size_t	wight;
 }               t_format;
 
-int     ft_printf(const char *format, ...);
-void    p_char(va_list arg, t_format *type, int *count);
+int			p_hex(va_list arg, t_format *type, int *count);
+int			p_upper_hex(va_list arg, t_format *type, int *count);
+int			ft_printf(const char *format, ...);
+int			p_char(va_list arg, t_format *type, int *count);
+int			p_str(va_list arg, t_format *type, int *count);
+int			p_int(va_list arg, t_format *type, int *count);
+int			p_unsigned(va_list arg, t_format *type, int *count);
+size_t		ft_strlen(char *str1);
+char		*ft_int_wight(int integer, size_t *wight);
 
 #endif

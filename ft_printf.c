@@ -1,41 +1,44 @@
 #include "ft_printf.h"
-# define START {
-# define END }
 
+void	null_struct(t_format *type)
+{
+	type->wight = 0;
+	type->zero = 0;
+	type->type = 0;
+	type->minus = 0;
+}
 
-void	find_function(va_list arg, t_format *type,  int *count)
+int		find_function(va_list arg, t_format *type,  int *count)
 START
 	char	flag;
 
 	flag = type->type;
 	if (flag == 'c')
-		p_char(arg, type, count);
+		return (!(p_char(arg, type, count)));
 	else if (flag == 's')
-		p_str(arg, type, count);
+		return(!(p_str(arg, type, count)));
 	else if (flag == 'd' || flag == 'i')
-		p_int(arg, type, count);
-	else if (flag == 'p')
-		p_pointer(arg, type, count);
+		return (!(p_int(arg, type, count)));
+//	else if (flag == 'p')
+//		p_pointer(arg, type, count);
 	else if (flag == 'u')
 		p_unsigned(arg, type, count);
 	else if (flag == 'x')
 		p_hex(arg, type, count);
-	else if (flag == 'X')
-		p_upper_hex(arg, type, count);
-	else if (flag == 'n')
-		p_nvalues(arg, count);
+//	else if (flag == 'X')
+//		p_upper_hex(arg, type, count);
 END
 
 int check_flag(char *str, int *count, t_format *type)
-START
-	if (*str == 'i' || *str == 'd' ||  *str == 'c' || *str == 's' || *str == 'p' || \
-		*str == 'x' || *str == 'X' || *str == 'n' || *str == 'u')
-	{
+{
+	if (*str == 'i' || *str == 'd' || *str == 'c' || *str == 's' ||
+		*str == 'p' || \
+        *str == 'x' || *str == 'X' || *str == 'n' || *str == 'u') {
 		type->type = *str;
 		return (1);
 	}
 	return (0);
-END
+}
 
 int	check_wight(char *str, int *count, t_format *type)
 START
@@ -44,20 +47,18 @@ START
 
 	i = 0;
 	flag = 0;
-	type->wight = 0;
-	while (str[i] == '%' || (str[i] >= '0' && str[i] >= '9'))
+	null_struct(type);
+	while (str[i] == '%' || (str[i] >= '0' && str[i] <= '9'))
 	START
 		if (str[i] == '%')
-			flag++;
-		if (flag == 2)
+			++flag && ++i;
+		if (flag == 1 && str[i] == '%')
 		{
-			write(1, "%", 1);
-			*count += 1;
-			return (1) ;
+			*count += write(1, "%", 1);
+			return (i + 1);
 		}
-		if (flag == 1)
-			type->wight = type->wight * 10 + str[i] + 48;
-		i++;
+		if (flag == 1 && str[i] >= '0' && str[i] <= '9')
+			type->wight = type->wight * 10 + str[i++] - 48;
 	END
 	return (i);
 END
@@ -66,24 +67,27 @@ void    check_string(va_list arg, int *count, char *str)
 START
 	int			i;
 	int			chk_exc;
-	t_format	*type;
+	t_format	type;
 	
 	i = 0;
 	chk_exc = 0;
 	while (str[i] != 0)
 	START
-		if (*str + i == '%')
+		if (str[i] == '%')
 		{
 			chk_exc = *count;
-			i += check_wight(str[i], count, type);
+			i += check_wight(&str[i], count, &type);
 			if (chk_exc != *count)
 				continue ;
-			if (!check_flag(str[i], count, type))
+			if (!check_flag(&str[i], count, &type))
 				return ;
-			find_function(arg, type, *count);
+			i += find_function(arg, &type, count);
 		}
-		i += write(1, str + i, 1);
-		(*count)++;
+		if (str[i] != 0)
+		{
+			i += write(1, str + i, 1);
+			*count += 1;
+		}
 	END
 END
 
@@ -103,5 +107,6 @@ END
 
 int main()
 {
-	ft_printf("|dhgkvjkghbjsdvblvckghjblifkcktvygh|");
+	unsigned int i = 111111111;
+	printf("%d", ft_printf("|%1x|\n", i));
 }
