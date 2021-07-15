@@ -16,13 +16,15 @@ static void	put_str(char *str, int *count, int mod, size_t len)
 
 static void hex_point_ft(unsigned int hex, size_t *len, char *hex_str)
 {
-	char hex_buf[16] = "0123456789abcdef";
+	char hex_buf[16] = "0123456789ABCDEF";
 
 	while (1) {
-		if (hex < 16) {
+		if (hex < 16)
+		{
 			hex_str[(*len)++] = hex_buf[hex];
 			return;
-		} else
+		}
+		else
 			hex_str[(*len)++] = hex_buf[hex % 16];
 		hex /= 16;
 	}

@@ -169,221 +169,194 @@ ft_printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_printf.c.s
 .PHONY : ft_printf.c.s
 
-src/p_char.o: src/p_char.c.o
+src/print_char.o: src/print_char.c.o
 
-.PHONY : src/p_char.o
-
-# target to build an object file
-src/p_char.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_char.c.o
-.PHONY : src/p_char.c.o
-
-src/p_char.i: src/p_char.c.i
-
-.PHONY : src/p_char.i
-
-# target to preprocess a source file
-src/p_char.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_char.c.i
-.PHONY : src/p_char.c.i
-
-src/p_char.s: src/p_char.c.s
-
-.PHONY : src/p_char.s
-
-# target to generate assembly for a file
-src/p_char.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_char.c.s
-.PHONY : src/p_char.c.s
-
-src/p_hex.o: src/p_hex.c.o
-
-.PHONY : src/p_hex.o
+.PHONY : src/print_char.o
 
 # target to build an object file
-src/p_hex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_hex.c.o
-.PHONY : src/p_hex.c.o
+src/print_char.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_char.c.o
+.PHONY : src/print_char.c.o
 
-src/p_hex.i: src/p_hex.c.i
+src/print_char.i: src/print_char.c.i
 
-.PHONY : src/p_hex.i
+.PHONY : src/print_char.i
 
 # target to preprocess a source file
-src/p_hex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_hex.c.i
-.PHONY : src/p_hex.c.i
+src/print_char.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_char.c.i
+.PHONY : src/print_char.c.i
 
-src/p_hex.s: src/p_hex.c.s
+src/print_char.s: src/print_char.c.s
 
-.PHONY : src/p_hex.s
+.PHONY : src/print_char.s
 
 # target to generate assembly for a file
-src/p_hex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_hex.c.s
-.PHONY : src/p_hex.c.s
+src/print_char.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_char.c.s
+.PHONY : src/print_char.c.s
 
-src/p_int.o: src/p_int.c.o
+src/print_hex.o: src/print_hex.c.o
 
-.PHONY : src/p_int.o
+.PHONY : src/print_hex.o
 
 # target to build an object file
-src/p_int.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_int.c.o
-.PHONY : src/p_int.c.o
+src/print_hex.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_hex.c.o
+.PHONY : src/print_hex.c.o
 
-src/p_int.i: src/p_int.c.i
+src/print_hex.i: src/print_hex.c.i
 
-.PHONY : src/p_int.i
+.PHONY : src/print_hex.i
 
 # target to preprocess a source file
-src/p_int.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_int.c.i
-.PHONY : src/p_int.c.i
+src/print_hex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_hex.c.i
+.PHONY : src/print_hex.c.i
 
-src/p_int.s: src/p_int.c.s
+src/print_hex.s: src/print_hex.c.s
 
-.PHONY : src/p_int.s
+.PHONY : src/print_hex.s
 
 # target to generate assembly for a file
-src/p_int.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_int.c.s
-.PHONY : src/p_int.c.s
+src/print_hex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_hex.c.s
+.PHONY : src/print_hex.c.s
 
-src/p_pointer.o: src/p_pointer.c.o
+src/print_int.o: src/print_int.c.o
 
-.PHONY : src/p_pointer.o
+.PHONY : src/print_int.o
 
 # target to build an object file
-src/p_pointer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_pointer.c.o
-.PHONY : src/p_pointer.c.o
+src/print_int.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_int.c.o
+.PHONY : src/print_int.c.o
 
-src/p_pointer.i: src/p_pointer.c.i
+src/print_int.i: src/print_int.c.i
 
-.PHONY : src/p_pointer.i
+.PHONY : src/print_int.i
 
 # target to preprocess a source file
-src/p_pointer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_pointer.c.i
-.PHONY : src/p_pointer.c.i
+src/print_int.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_int.c.i
+.PHONY : src/print_int.c.i
 
-src/p_pointer.s: src/p_pointer.c.s
+src/print_int.s: src/print_int.c.s
 
-.PHONY : src/p_pointer.s
+.PHONY : src/print_int.s
 
 # target to generate assembly for a file
-src/p_pointer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_pointer.c.s
-.PHONY : src/p_pointer.c.s
+src/print_int.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_int.c.s
+.PHONY : src/print_int.c.s
 
-src/p_str.o: src/p_str.c.o
+src/print_pointer.o: src/print_pointer.c.o
 
-.PHONY : src/p_str.o
+.PHONY : src/print_pointer.o
 
 # target to build an object file
-src/p_str.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_str.c.o
-.PHONY : src/p_str.c.o
+src/print_pointer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_pointer.c.o
+.PHONY : src/print_pointer.c.o
 
-src/p_str.i: src/p_str.c.i
+src/print_pointer.i: src/print_pointer.c.i
 
-.PHONY : src/p_str.i
+.PHONY : src/print_pointer.i
 
 # target to preprocess a source file
-src/p_str.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_str.c.i
-.PHONY : src/p_str.c.i
+src/print_pointer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_pointer.c.i
+.PHONY : src/print_pointer.c.i
 
-src/p_str.s: src/p_str.c.s
+src/print_pointer.s: src/print_pointer.c.s
 
-.PHONY : src/p_str.s
+.PHONY : src/print_pointer.s
 
 # target to generate assembly for a file
-src/p_str.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_str.c.s
-.PHONY : src/p_str.c.s
+src/print_pointer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_pointer.c.s
+.PHONY : src/print_pointer.c.s
 
-src/p_unsigned.o: src/p_unsigned.c.o
+src/print_str.o: src/print_str.c.o
 
-.PHONY : src/p_unsigned.o
+.PHONY : src/print_str.o
 
 # target to build an object file
-src/p_unsigned.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_unsigned.c.o
-.PHONY : src/p_unsigned.c.o
+src/print_str.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_str.c.o
+.PHONY : src/print_str.c.o
 
-src/p_unsigned.i: src/p_unsigned.c.i
+src/print_str.i: src/print_str.c.i
 
-.PHONY : src/p_unsigned.i
+.PHONY : src/print_str.i
 
 # target to preprocess a source file
-src/p_unsigned.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_unsigned.c.i
-.PHONY : src/p_unsigned.c.i
+src/print_str.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_str.c.i
+.PHONY : src/print_str.c.i
 
-src/p_unsigned.s: src/p_unsigned.c.s
+src/print_str.s: src/print_str.c.s
 
-.PHONY : src/p_unsigned.s
+.PHONY : src/print_str.s
 
 # target to generate assembly for a file
-src/p_unsigned.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_unsigned.c.s
-.PHONY : src/p_unsigned.c.s
+src/print_str.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_str.c.s
+.PHONY : src/print_str.c.s
 
-src/p_upper_hex.o: src/p_upper_hex.c.o
+src/print_unsigned.o: src/print_unsigned.c.o
 
-.PHONY : src/p_upper_hex.o
+.PHONY : src/print_unsigned.o
 
 # target to build an object file
-src/p_upper_hex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o
-.PHONY : src/p_upper_hex.c.o
+src/print_unsigned.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_unsigned.c.o
+.PHONY : src/print_unsigned.c.o
 
-src/p_upper_hex.i: src/p_upper_hex.c.i
+src/print_unsigned.i: src/print_unsigned.c.i
 
-.PHONY : src/p_upper_hex.i
+.PHONY : src/print_unsigned.i
 
 # target to preprocess a source file
-src/p_upper_hex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_upper_hex.c.i
-.PHONY : src/p_upper_hex.c.i
+src/print_unsigned.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_unsigned.c.i
+.PHONY : src/print_unsigned.c.i
 
-src/p_upper_hex.s: src/p_upper_hex.c.s
+src/print_unsigned.s: src/print_unsigned.c.s
 
-.PHONY : src/p_upper_hex.s
+.PHONY : src/print_unsigned.s
 
 # target to generate assembly for a file
-src/p_upper_hex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/p_upper_hex.c.s
-.PHONY : src/p_upper_hex.c.s
+src/print_unsigned.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_unsigned.c.s
+.PHONY : src/print_unsigned.c.s
 
-utils/parsutils.o: utils/parsutils.c.o
+src/print_upper_hex.o: src/print_upper_hex.c.o
 
-.PHONY : utils/parsutils.o
+.PHONY : src/print_upper_hex.o
 
 # target to build an object file
-utils/parsutils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/utils/parsutils.c.o
-.PHONY : utils/parsutils.c.o
+src/print_upper_hex.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_upper_hex.c.o
+.PHONY : src/print_upper_hex.c.o
 
-utils/parsutils.i: utils/parsutils.c.i
+src/print_upper_hex.i: src/print_upper_hex.c.i
 
-.PHONY : utils/parsutils.i
+.PHONY : src/print_upper_hex.i
 
 # target to preprocess a source file
-utils/parsutils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/utils/parsutils.c.i
-.PHONY : utils/parsutils.c.i
+src/print_upper_hex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_upper_hex.c.i
+.PHONY : src/print_upper_hex.c.i
 
-utils/parsutils.s: utils/parsutils.c.s
+src/print_upper_hex.s: src/print_upper_hex.c.s
 
-.PHONY : utils/parsutils.s
+.PHONY : src/print_upper_hex.s
 
 # target to generate assembly for a file
-utils/parsutils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/utils/parsutils.c.s
-.PHONY : utils/parsutils.c.s
+src/print_upper_hex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_upper_hex.c.s
+.PHONY : src/print_upper_hex.c.s
 
 # Help Target
 help:
@@ -397,30 +370,27 @@ help:
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
-	@echo "... src/p_char.o"
-	@echo "... src/p_char.i"
-	@echo "... src/p_char.s"
-	@echo "... src/p_hex.o"
-	@echo "... src/p_hex.i"
-	@echo "... src/p_hex.s"
-	@echo "... src/p_int.o"
-	@echo "... src/p_int.i"
-	@echo "... src/p_int.s"
-	@echo "... src/p_pointer.o"
-	@echo "... src/p_pointer.i"
-	@echo "... src/p_pointer.s"
-	@echo "... src/p_str.o"
-	@echo "... src/p_str.i"
-	@echo "... src/p_str.s"
-	@echo "... src/p_unsigned.o"
-	@echo "... src/p_unsigned.i"
-	@echo "... src/p_unsigned.s"
-	@echo "... src/p_upper_hex.o"
-	@echo "... src/p_upper_hex.i"
-	@echo "... src/p_upper_hex.s"
-	@echo "... utils/parsutils.o"
-	@echo "... utils/parsutils.i"
-	@echo "... utils/parsutils.s"
+	@echo "... src/print_char.o"
+	@echo "... src/print_char.i"
+	@echo "... src/print_char.s"
+	@echo "... src/print_hex.o"
+	@echo "... src/print_hex.i"
+	@echo "... src/print_hex.s"
+	@echo "... src/print_int.o"
+	@echo "... src/print_int.i"
+	@echo "... src/print_int.s"
+	@echo "... src/print_pointer.o"
+	@echo "... src/print_pointer.i"
+	@echo "... src/print_pointer.s"
+	@echo "... src/print_str.o"
+	@echo "... src/print_str.i"
+	@echo "... src/print_str.s"
+	@echo "... src/print_unsigned.o"
+	@echo "... src/print_unsigned.i"
+	@echo "... src/print_unsigned.s"
+	@echo "... src/print_upper_hex.o"
+	@echo "... src/print_upper_hex.i"
+	@echo "... src/print_upper_hex.s"
 .PHONY : help
 
 

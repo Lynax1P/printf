@@ -3,9 +3,7 @@
 void	null_struct(t_format *type)
 {
 	type->wight = 0;
-	type->zero = 0;
 	type->type = 0;
-	type->minus = 0;
 }
 
 int		find_function(va_list arg, t_format *type,  int *count)
@@ -30,14 +28,15 @@ int		find_function(va_list arg, t_format *type,  int *count)
 	return 0;
 }
 
-int check_flag(char *str, int *count, t_format *type)
+int check_flag(char *str, t_format *type)
 {
 	if (*str == 'i' || *str == 'd' || *str == 'c' || *str == 's' ||
 		*str == 'p' || \
-        *str == 'x' || *str == 'X' || *str == 'n' || *str == 'u') {
-		type->type = *str;
-		return (1);
-	}
+        *str == 'x' || *str == 'X' || *str == 'n' || *str == 'u')
+        {
+			type->type = *str;
+			return (1);
+		}
 	return (0);
 }
 
@@ -80,7 +79,7 @@ void    check_string(va_list arg, int *count, char *str)
 			i += check_wight(&str[i], count, &type);
 			if (chk_exc != *count)
 				continue ;
-			if (!check_flag(&str[i], count, &type))
+			if (!check_flag(&str[i], &type))
 				return ;
 			i += find_function(arg, &type, count);
 		}
@@ -104,13 +103,4 @@ int ft_printf(const char *format, ...)
 	check_string(arg, &count, (char *)format);
     va_end(arg);
     return (count);
-}
-
-int main()
-{
-	int i = 1000032413331189511;
-
-
-	printf("%d\n", ft_printf("u -> |%20u|\nd -> |%20d|\ni -> |%20i|\np -> |%20p|\nx -> |%20x|\nX -> |%20X|\n", i, i , i , i , i));
-	printf("%d\n", printf("u -> |%20u|\nd -> |%20d|\ni -> |%20i|\np -> |%20p|\nx -> |%20x|\nX -> |%20X|\n", i, i , i , i , i));
 }

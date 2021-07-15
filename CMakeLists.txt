@@ -8,11 +8,10 @@ include_directories(./)
 add_executable(ft_printf
         ft_printf.c
         ft_printf.h
-        src/p_char.c
-        src/p_str.c
-        src/p_int.c
-        src/p_unsigned.c
-        src/p_hex.c
-        src/p_upper_hex.c
-        src/p_pointer.c
-        utils/parsutils.c)
+        src/print_char.c
+        src/print_str.c
+        src/print_int.c
+        src/print_unsigned.c
+        src/print_hex.c
+        src/print_upper_hex.c
+        src/print_pointer.c)

@@ -47,10 +47,11 @@ int	p_hex(va_list arg, t_format *type, int *count)
 			put_str(hex_str, count, 0, len);
 		else {
 			wht = wht - len;
-			return (!(put_str(NULL, count, wht, 0) == \
-             put_str(hex_str, count, 0, len)));
+			put_str(NULL, count, wht, 0);
+			put_str(hex_str, count, 0, len);
+			return (0);
 		}
 	}
-	return (1);
+	return (0);
 }
 

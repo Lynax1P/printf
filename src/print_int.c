@@ -41,19 +41,18 @@ static char	*ft_int_wight(int integer, size_t *wight)
 	return (point);
 }
 
-static int min_int(int integer, size_t wht, int *count)
+static int min_int(size_t wht, int *count)
 {
-	int len;
+	size_t len;
 
 	len = 11;
 	if (wht < len)
-		write(1, "-2147483648", 11);
+		*count += write(1, "-2147483648", 11);
 	else
 	{
 		wht = wht - len;
 		put_str(NULL, count, wht, len);
-		write(1, "-2147483648", 11);
-		*count += 11;
+		*count += write(1, "-2147483648", 11);;
 	}
 	return (0);
 }
@@ -69,7 +68,7 @@ int	p_int(va_list arg, t_format *type, int *count)
 	wht = type->wight;
 	integer = va_arg(arg, int);
 	if (integer == -2147483648)
-		return (min_int(integer, wht, count));
+		return (min_int(wht, count));
 	buf = ft_int_wight(integer, &len);
 	if (len)
 	{
@@ -78,8 +77,9 @@ int	p_int(va_list arg, t_format *type, int *count)
 		else
 		{
 			wht = wht - len;
-			return (!(put_str(NULL, count, wht, 0) == put_str(buf, count, 0, len)));
+			put_str(NULL, count, wht, 0);
+			return (!(put_str(buf, count, 0, len)));
 		}
 	}
-	return (1);
+	return (0);
 }

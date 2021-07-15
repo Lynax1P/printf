@@ -5,14 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/csherill/Documents/clone/printf/ft_printf.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/ft_printf.c.o"
-  "/Users/csherill/Documents/clone/printf/src/p_char.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/p_char.c.o"
-  "/Users/csherill/Documents/clone/printf/src/p_hex.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/p_hex.c.o"
-  "/Users/csherill/Documents/clone/printf/src/p_int.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/p_int.c.o"
-  "/Users/csherill/Documents/clone/printf/src/p_pointer.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/p_pointer.c.o"
-  "/Users/csherill/Documents/clone/printf/src/p_str.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/p_str.c.o"
-  "/Users/csherill/Documents/clone/printf/src/p_unsigned.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/p_unsigned.c.o"
-  "/Users/csherill/Documents/clone/printf/src/p_upper_hex.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o"
-  "/Users/csherill/Documents/clone/printf/utils/parsutils.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/utils/parsutils.c.o"
+  "/Users/csherill/Documents/clone/printf/src/print_char.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/print_char.c.o"
+  "/Users/csherill/Documents/clone/printf/src/print_hex.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/print_hex.c.o"
+  "/Users/csherill/Documents/clone/printf/src/print_int.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/print_int.c.o"
+  "/Users/csherill/Documents/clone/printf/src/print_pointer.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/print_pointer.c.o"
+  "/Users/csherill/Documents/clone/printf/src/print_str.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/print_str.c.o"
+  "/Users/csherill/Documents/clone/printf/src/print_unsigned.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/print_unsigned.c.o"
+  "/Users/csherill/Documents/clone/printf/src/print_upper_hex.c" "/Users/csherill/Documents/clone/printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/print_upper_hex.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

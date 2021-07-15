@@ -8,7 +8,7 @@ START
 	i = type->wight;
 	c = va_arg(arg, int);
 	if (!type->wight)
-		write(1, &c, 1);
+		*count += write(1, &c, 1);
 	else
 	{
 		while(i)

@@ -14,7 +14,7 @@ static void	put_str(char *str, int *count, int mod, size_t len)
 
 }
 
-static void *ft_unint_wight(unsigned int integer, size_t *wight, char *buf)
+static void ft_unint_wight(unsigned int integer, size_t *wight, char *buf)
 {
 	size_t i;
 	

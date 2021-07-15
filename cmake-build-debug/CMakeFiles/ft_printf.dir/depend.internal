@@ -4,27 +4,24 @@
 CMakeFiles/ft_printf.dir/ft_printf.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.c
  /Users/csherill/Documents/clone/printf/ft_printf.h
-CMakeFiles/ft_printf.dir/src/p_char.c.o
+CMakeFiles/ft_printf.dir/src/print_char.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
- /Users/csherill/Documents/clone/printf/src/p_char.c
-CMakeFiles/ft_printf.dir/src/p_hex.c.o
+ /Users/csherill/Documents/clone/printf/src/print_char.c
+CMakeFiles/ft_printf.dir/src/print_hex.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
- /Users/csherill/Documents/clone/printf/src/p_hex.c
-CMakeFiles/ft_printf.dir/src/p_int.c.o
+ /Users/csherill/Documents/clone/printf/src/print_hex.c
+CMakeFiles/ft_printf.dir/src/print_int.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
- /Users/csherill/Documents/clone/printf/src/p_int.c
-CMakeFiles/ft_printf.dir/src/p_pointer.c.o
+ /Users/csherill/Documents/clone/printf/src/print_int.c
+CMakeFiles/ft_printf.dir/src/print_pointer.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
- /Users/csherill/Documents/clone/printf/src/p_pointer.c
-CMakeFiles/ft_printf.dir/src/p_str.c.o
+ /Users/csherill/Documents/clone/printf/src/print_pointer.c
+CMakeFiles/ft_printf.dir/src/print_str.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
- /Users/csherill/Documents/clone/printf/src/p_str.c
-CMakeFiles/ft_printf.dir/src/p_unsigned.c.o
+ /Users/csherill/Documents/clone/printf/src/print_str.c
+CMakeFiles/ft_printf.dir/src/print_unsigned.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
- /Users/csherill/Documents/clone/printf/src/p_unsigned.c
-CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o
+ /Users/csherill/Documents/clone/printf/src/print_unsigned.c
+CMakeFiles/ft_printf.dir/src/print_upper_hex.c.o
  /Users/csherill/Documents/clone/printf/ft_printf.h
- /Users/csherill/Documents/clone/printf/src/p_upper_hex.c
-CMakeFiles/ft_printf.dir/utils/parsutils.c.o
- /Users/csherill/Documents/clone/printf/ft_printf.h
- /Users/csherill/Documents/clone/printf/utils/parsutils.c
+ /Users/csherill/Documents/clone/printf/src/print_upper_hex.c

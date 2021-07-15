@@ -4,27 +4,24 @@
 CMakeFiles/ft_printf.dir/ft_printf.c.o: ../ft_printf.c
 CMakeFiles/ft_printf.dir/ft_printf.c.o: ../ft_printf.h
 
-CMakeFiles/ft_printf.dir/src/p_char.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.dir/src/p_char.c.o: ../src/p_char.c
+CMakeFiles/ft_printf.dir/src/print_char.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_char.c.o: ../src/print_char.c
 
-CMakeFiles/ft_printf.dir/src/p_hex.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.dir/src/p_hex.c.o: ../src/p_hex.c
+CMakeFiles/ft_printf.dir/src/print_hex.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_hex.c.o: ../src/print_hex.c
 
-CMakeFiles/ft_printf.dir/src/p_int.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.dir/src/p_int.c.o: ../src/p_int.c
+CMakeFiles/ft_printf.dir/src/print_int.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_int.c.o: ../src/print_int.c
 
-CMakeFiles/ft_printf.dir/src/p_pointer.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.dir/src/p_pointer.c.o: ../src/p_pointer.c
+CMakeFiles/ft_printf.dir/src/print_pointer.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_pointer.c.o: ../src/print_pointer.c
 
-CMakeFiles/ft_printf.dir/src/p_str.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.dir/src/p_str.c.o: ../src/p_str.c
+CMakeFiles/ft_printf.dir/src/print_str.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_str.c.o: ../src/print_str.c
 
-CMakeFiles/ft_printf.dir/src/p_unsigned.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.dir/src/p_unsigned.c.o: ../src/p_unsigned.c
+CMakeFiles/ft_printf.dir/src/print_unsigned.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_unsigned.c.o: ../src/print_unsigned.c
 
-CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.dir/src/p_upper_hex.c.o: ../src/p_upper_hex.c
-
-CMakeFiles/ft_printf.dir/utils/parsutils.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.dir/utils/parsutils.c.o: ../utils/parsutils.c
+CMakeFiles/ft_printf.dir/src/print_upper_hex.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_upper_hex.c.o: ../src/print_upper_hex.c
 
