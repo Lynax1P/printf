@@ -104,3 +104,13 @@ int ft_printf(const char *format, ...)
     va_end(arg);
     return (count);
 }
+
+int main()
+{
+	char a[] = "chiugjhjhjghvc";
+	char f = '1';
+	int i = 5;
+	unsigned int un = 3002342000;
+
+	printf("\n|%10d| - >\n", ft_printf("%x, %X, %x, %X,%s, %u, %c, %%", i,i,un,un,a,un,f));
+}

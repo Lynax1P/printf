@@ -42,7 +42,7 @@ int	p_pointer(va_list arg, t_format *type, int *count)
 
     len = 0;
 	wht = type->wight;
-	point = va_arg(arg, unsigned long);
+	point = (unsigned long)va_arg(arg, void *);
 	hex_point_ft(point, &len, &*hex_str);
 	if (len)
 	{
