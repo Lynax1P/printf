@@ -1,14 +1,10 @@
 NAME = libftprintf.a
 HEAD	=		ft_printf.h
 
+
 LIST =			ft_printf.c \
-				src/print_char.c\
-				src/print_str.c\
-				src/print_int.c\
-				src/print_unsigned.c\
-				src/print_hex.c\
-				src/print_upper_hex.c\
-				src/print_pointer.c
+				print_c_s_i_d.c\
+				print_h_uph_p.c\
 
 O_OBJ	= 	$(patsubst %.c,%.o,$(LIST))
 
@@ -29,18 +25,12 @@ $(NAME) :	$(O_OBJ) $(HEAD)
 
 bonus :
 		@make
-test :	
-		$(CC) $(LIST) -o test 
-		./test > out_ft_printf.txt
-		@make clean
-		$(CC) print.c -o test 
-		./test > out_printf.txt
-		diff out_printf.txt out_ft_printf.txt > diff.txt 
-		@a=1;
+test :	all
+		$(CC) $(CFLAGS) $(LIST) -o test
 clean :
 	@rm -f $(O_OBJ)
 	@rm -f test
 
 fclean :	clean
-	@rm -f $(NAME) out_ft_printf.txt out_printf.txt diff.txt
+	@rm -f $(NAME)
 re :        fclean all
